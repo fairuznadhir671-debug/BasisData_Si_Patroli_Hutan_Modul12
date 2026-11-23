@@ -45,6 +45,11 @@ Jalankan scripts/01_migrasi_data_latihan.sql terlebih dahulu untuk menyiapkan sk
 
 Jalankan scripts/02_query_transportasi.sql untuk mengamati hasil kueri serta keluaran EXPLAIN (ANALYZE, BUFFERS).
 
+Jalankan scripts/03_pengujian_dcl.sql secara bertahap sesuai kebutuhan pengujian hak akses; ganti placeholder kata sandi sebelum eksekusi dan pastikan tidak menyimpan kata sandi asli di repositori.
+
+Jalankan scripts/04_rancangan_migrasi_pjbl.sql untuk menguji rancangan migrasi SIPATROLI HUTAN di lingkungan pengembangan.
+
+
 ## Struktur Direktori
 
 ```text
@@ -53,7 +58,7 @@ praktikum_modul12/
 │   ├── 01_migrasi_data_latihan.cypher      # Pengecekan versi DBMS, migrasi node & relasi (:Trip, :Route, [:ON_ROUTE])
 │   ├── 02_query_transportasi.cypher        # Query seleksi, traversal, proyeksi, dan inspeksi rencana eksekusi (PROFILE)
 │   ├── 03_pengujian_dcl.cypher             # Pembuatan role/user, GRANT, REVOKE, dan pengujian hak akses (Least Privilege)
-│   └── 04_rancangan_migrasi_pjbl.cypher    # Pembuatan Range Index dan query traversal proyek Madiun ECO-MAPS
+│   └── 04_rancangan_migrasi_pjbl.cypher    # Pembuatan Range Index dan query traversal proyek SiPatroliHutan
 ├── dokumentasi/
 │   ├── analisis_query_cost.pdf             # Analisis perbandingan rencana eksekusi & estimasi page read
 │   └── laporan_modul12.pdf                 # Laporan lengkap Tahap 1–5 beserta bukti tangkapan layar
@@ -61,6 +66,4 @@ praktikum_modul12/
 │   └── query_tree.png                      # Diagram Query Tree (Rencana Standar vs Selection Pushdown)
 └── README.md
 
-Jalankan scripts/03_pengujian_dcl.sql secara bertahap sesuai kebutuhan pengujian hak akses; ganti placeholder kata sandi sebelum eksekusi dan pastikan tidak menyimpan kata sandi asli di repositori.
 
-Jalankan scripts/04_rancangan_migrasi_pjbl.sql untuk menguji rancangan migrasi SIPATROLI HUTAN di lingkungan pengembangan.
